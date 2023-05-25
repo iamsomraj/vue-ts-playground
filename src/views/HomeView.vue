@@ -1,9 +1,7 @@
 <template>
   <Form.FormRoot>
-    <Form.Label>
-      Name
-    </Form.Label>
-    <Form.Input />
+    <Form.Label>Form Label</Form.Label>
+    <Form.Input value="Form Value" />
   </Form.FormRoot>
 </template>
 
