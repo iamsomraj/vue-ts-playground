@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="toggle">Toggle Confirm Modal</button>
-    <ConfirmModal v-if="showModal" @close="toggle"></ConfirmModal>
+    <ConfirmModal @close="toggle" :open="showModal"></ConfirmModal>
   </div>
 </template>
 
