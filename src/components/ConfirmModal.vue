@@ -1,5 +1,5 @@
 <template>
-  <Modal.Root :open="open">
+  <Modal.Root>
     <Modal.Header>Hey there!</Modal.Header>
     <Modal.Body>
       <p>Are you sure you want to do this?</p>
@@ -15,9 +15,6 @@ import * as Modal from '@/components/Modal/Modal'
 defineOptions({
   name: 'ConfirmModal'
 })
-defineProps<{
-  open: Boolean
-}>()
 const emit = defineEmits<{
   (e: 'close'): void
 }>()

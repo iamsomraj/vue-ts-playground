@@ -5,28 +5,17 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-
+import { ref, onMounted, onUnmounted } from 'vue'
 defineOptions({
   name: 'ModalRoot'
 })
-const props = defineProps<{
-  open: Boolean
-}>()
-const showModal = computed(() => props.open)
 const dialog = ref<HTMLDialogElement | null>(null)
-watch(
-  () => showModal.value,
-  (open) => {
-    if (dialog.value) {
-      if (open) {
-        dialog.value.showModal()
-      } else {
-        dialog.value.close()
-      }
-    }
-  }
-)
+onMounted(() => {
+  dialog.value?.showModal()
+})
+onUnmounted(() => {
+  dialog.value?.close()
+})
 </script>
 
 <style scoped>
