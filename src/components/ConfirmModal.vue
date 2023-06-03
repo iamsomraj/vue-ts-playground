@@ -28,7 +28,6 @@ dialog {
   border: solid 1px #ccc;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 }
 button {
   margin: 0rem;
