@@ -17,17 +17,3 @@ onUnmounted(() => {
   dialog.value?.close()
 })
 </script>
-
-<style scoped>
-dialog {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-dialog::backdrop {
-  background-color: rgba(6, 4, 4, 0.5);
-}
-</style>

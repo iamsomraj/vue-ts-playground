@@ -13,3 +13,15 @@ const toggle = () => {
   showModal.value = !showModal.value
 }
 </script>
+
+<style scoped>
+button {
+  margin: 0rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  font-weight: 500;
+}
+</style>
